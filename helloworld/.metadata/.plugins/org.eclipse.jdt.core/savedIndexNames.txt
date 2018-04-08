@@ -1,0 +1,24 @@
+INDEX VERSION 1.130+C:\Users\galvarez\eclipse-workspace\helloworld\.metadata\.plugins\org.eclipse.jdt.core
+4273719709.index
+2041228965.index
+1927032261.index
+1086040331.index
+2224932203.index
+3393883626.index
+4014003712.index
+3900007005.index
+276741245.index
+2573467454.index
+944862059.index
+3053349707.index
+3119562658.index
+1721370109.index
+4130065801.index
+3795261849.index
+514863639.index
+3383765562.index
+4195932585.index
+3587046506.index
+3161929193.index
+4231972023.index
+4105115319.index
