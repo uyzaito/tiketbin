@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('build') {
       steps {
-        sh 'mvn clean install -f helloworld/pom.xml'
+        sh '\'mvn clean install -f helloworld/pom.xml\''
       }
     }
   }
