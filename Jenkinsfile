@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn clean install -f "${WORKSPACE}/helloworld/pom.xml'
+        sh 'mvn clean install -f "${WORKSPACE}/helloworld/pom.xml'
       }
     }
   }
