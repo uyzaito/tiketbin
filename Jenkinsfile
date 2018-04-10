@@ -7,7 +7,7 @@ pipeline {
       }
     }
   }
-  environment {
-    tool = 'maven'
-  }
+  tools { 
+        maven 'maven' 
+        jdk 'java'
 }
