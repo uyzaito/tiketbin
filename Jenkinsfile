@@ -8,7 +8,7 @@ pipeline {
     }
     stage('jira') {
       steps {
-        jiraSearch 'TPJ-1'
+        jiraComment(issueKey: 'TPJ-1', body: 'se realizo el build')
       }
     }
   }
