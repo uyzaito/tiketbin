@@ -8,7 +8,6 @@ pipeline {
     }
     stage('jira') {
       steps {
-        jiraComment(issueKey: 'TPJ-1', body: 'prueba1')
         jiraSearch 'TPJ-1'
       }
     }
