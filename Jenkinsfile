@@ -3,14 +3,14 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'mvn clean install -f "${WORKSPACE}"/helloworld/pom.xml'
+        sh 'mvn clean install -f helloworld/pom.xml'
       }
     }
     stage('version check'){
       steps{
-          pom = readMavenPom file: 'helloworld/pom.xml'
-          pom.version
-        echo 'pom.version'
+          def pom = readMavenPom file: 'helloworld/pom.xml'
+          def pom.version
+          echo 'pom.version'
       }
     }
     stage('jira') {
