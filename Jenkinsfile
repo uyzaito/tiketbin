@@ -8,10 +8,8 @@ pipeline {
     }
     stage('version check'){
       steps{
-        script{
           pom = readMavenPom file: 'helloworld/pom.xml'
           pom.version
-        }
         echo 'pom.version'
       }
     }
