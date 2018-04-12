@@ -6,6 +6,15 @@ pipeline {
         sh 'mvn clean install -f "${WORKSPACE}"/helloworld/pom.xml'
       }
     }
+    stage{
+      steps{
+        script{
+          pom = readMavenPom file: '${WORKSPACE}"/helloworld/pom.xml'
+          pom.version
+        }
+        echo 'pom.version'
+      }
+    }
     stage('jira') {
       steps {
         jiraComment(issueKey: 'TPJ-1', body: 'se realizo el build ${BUILD_NUMBER}')
