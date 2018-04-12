@@ -6,7 +6,7 @@ pipeline {
         sh 'mvn clean install -f "${WORKSPACE}"/helloworld/pom.xml'
       }
     }
-    stage{
+    stage('version check'){
       steps{
         script{
           pom = readMavenPom file: '${WORKSPACE}"/helloworld/pom.xml'
